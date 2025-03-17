@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import daria from "../pics/me.jpg";
 import toronto from "../pics/toronto.jpg";
@@ -36,7 +35,7 @@ export const Home = () => {
         >
           <img src={daria} alt="Daria portrait" className="bubble-pic" />
           <img src={toronto} alt="Toronto landscapes" className="bubble-pic" />
-          <img src={coding} className="bubble-pic" />
+          <img src={coding} alt="Coding" className="bubble-pic" />
         </motion.div>
 
         <motion.div
@@ -55,7 +54,7 @@ export const Home = () => {
             Chekhov
           </p>
           <p className="name">
-            <a href="#contact" className="contact-btn">
+            <a href="#contact" rel="noopener noreferrer" className="contact-btn">
               CONTACT ME
             </a>
           </p>
@@ -104,7 +103,7 @@ export const Home = () => {
             <div className="skills-container">
               {/* Frontend */}
               <div className="skill-card">
-                <img src={front} className="skill-img" />
+                <img src={front} alt="frontend" className="skill-img" />
                 <h3 className="skill-title">Frontend</h3>
                 <div className="skill-list">
                   {[
@@ -124,7 +123,7 @@ export const Home = () => {
               </div>
               {/* Backend */}
               <div className="skill-card">
-                <img src={back} className="skill-img" />
+                <img src={back} alt="backend"className="skill-img" />
                 <h3 className="skill-title">Backend</h3>
                 <div className="skill-list">
                   {[
@@ -149,7 +148,7 @@ export const Home = () => {
               </div>
               {/* Other Skills */}
               <div className="skill-card">
-                <img src={other} className="skill-img" />
+                <img src={other} alt="other" className="skill-img" />
                 <h3 className="skill-title">Other Skills</h3>
                 <div className="skill-list">
                   {[
@@ -181,7 +180,7 @@ export const Home = () => {
           <section id="education">
             <p className="title-section">Education</p>
             <div className="education-container">
-              <img src={gbc} />
+              <img  alt="george brown" src={gbc} />
               <div className="gbc-about">
                 <h3 className="education-title">
                   George Brown College - GPA 3.77
@@ -254,19 +253,19 @@ export const Home = () => {
                     </li>
                   </ul>
                   <div className="links">
-                    <a href="https://docs.google.com/document/d/1rj1KBrqrsP6E2r5BDXzVXL8phnU6XBS1/edit?usp=sharing&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank">
+                    <a href="https://docs.google.com/document/d/1rj1KBrqrsP6E2r5BDXzVXL8phnU6XBS1/edit?usp=sharing&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                       Project Summary
                     </a>
-                    <a href="https://docs.google.com/document/d/1rGCm9m7WrsVgMCUYNlyfdKtxT0LFgRnb/edit?usp=sharing&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank">
+                    <a href="https://docs.google.com/document/d/1rGCm9m7WrsVgMCUYNlyfdKtxT0LFgRnb/edit?usp=sharing&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                       Project Charter
                     </a>
-                    <a href="https://docs.google.com/document/d/1e-T0hOILEVEZwivrrQ47iaKiQpgVNYrF/edit?usp=drive_link&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank">
+                    <a href="https://docs.google.com/document/d/1e-T0hOILEVEZwivrrQ47iaKiQpgVNYrF/edit?usp=drive_link&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                       Project Report
                     </a>
-                    <a href="https://docs.google.com/document/d/1Jx3sTqRBeRdlZKkWfGmbvPTh-BeBDx-v/edit?usp=sharing&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank">
+                    <a href="https://docs.google.com/document/d/1Jx3sTqRBeRdlZKkWfGmbvPTh-BeBDx-v/edit?usp=sharing&ouid=112826811927615361089&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                       High Requirements
                     </a>
-                    <a href="https://docs.google.com/document/d/1wfTBjgMKhySEBXZsAhS0vU9t5NTi1NGnAlbe9_wxWQk/edit?usp=sharing" target="_blank">
+                    <a href="https://docs.google.com/document/d/1wfTBjgMKhySEBXZsAhS0vU9t5NTi1NGnAlbe9_wxWQk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                       Analysis and Design
                     </a>
                   </div>
@@ -375,7 +374,7 @@ export const Home = () => {
             <div className="footer-links">
               <p>
                 Email:{" "}
-                <a href="mailto:dariaignateva04@gmail.com">
+                <a href="mailto:dariaignateva04@gmail.com" rel="noopener noreferrer">
                   dariaignateva04@gmail.com
                 </a>
               </p>

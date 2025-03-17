@@ -1,9 +1,7 @@
 import connect4 from "../pics/connect4.png"
-import calorie from  "../pics/calorie.png"
 import healthy from "../pics/healthy.png"
 import todo from "../pics/todo.png"
 import expense from "../pics/expense.png"
-import craft from "../pics/craft.png"
 const projects = [
 
     {
