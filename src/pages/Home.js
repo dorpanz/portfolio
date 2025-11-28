@@ -15,7 +15,6 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import craft from "../pics/craft.png";
 import star from "../pics/star.jpg";
-import calorie from "../pics/calorie.png";
 
 export const Home = () => {
   useEffect(() => {

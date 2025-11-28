@@ -1,6 +1,5 @@
 import connect4 from "../pics/connect4.png"
 import mask from "../pics/maskon.png"
-import todo from "../pics/todo.png"
 import expense from "../pics/expense.png"
 import calorie from "../pics/calorie.png"
 const projects = [
