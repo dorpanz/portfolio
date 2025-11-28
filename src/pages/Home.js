@@ -4,6 +4,9 @@ import toronto from "../pics/toronto.jpg";
 import coding from "../pics/coding.jpg";
 import front from "../pics/front.png";
 import back from "../pics/back.png";
+import vis from "../pics/vis.png";
+import ml from "../pics/ml.png";
+import lang from "../pics/lang.png";
 import other from "../pics/other.png";
 import gbc from "../pics/gbc.png";
 import projects from "../data/projects";
@@ -11,6 +14,7 @@ import { Contact } from "./Contact";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import craft from "../pics/craft.png";
+import star from "../pics/star.jpg";
 import calorie from "../pics/calorie.png";
 
 export const Home = () => {
@@ -32,6 +36,7 @@ export const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
+          className="bubble-grid"
         >
           <img src={daria} alt="Daria portrait" className="bubble-pic" />
           <img src={toronto} alt="Toronto landscapes" className="bubble-pic" />
@@ -47,7 +52,7 @@ export const Home = () => {
         >
           <p className="hey">Hey there!</p>
           <p className="name">
-            I'm Daria Ignateva, a full stack developer based in Toronto
+            I'm Daria Ignateva, a aspiring data scientist based in Toronto
           </p>
           <p className="quote">
             "Knowledge is of no value unless you put it into practice." — Anton
@@ -103,17 +108,65 @@ export const Home = () => {
             <div className="skills-container">
               {/* Frontend */}
               <div className="skill-card">
-                <img src={front} alt="frontend" className="skill-img" />
-                <h3 className="skill-title">Frontend</h3>
+                <img src={lang} alt="frontend" className="skill-img" />
+                <h3 className="skill-title">Programming Languages</h3>
                 <div className="skill-list">
                   {[
-                    "HTML",
-                    "CSS",
+                    "Python",
+                    "R",
+                    "Java",
+                    "C#",
                     "JavaScript",
-                    "React",
-                    "Vue.js",
-                    "Angular",
-                    "Tailwind CSS",
+                    "SQL"
+                  ].map((skill) => (
+                    <span key={skill} className="skill-item">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-card">
+                <img src={ml} alt="frontend" className="skill-img" />
+                <h3 className="skill-title">Machine Learning</h3>
+                <div className="skill-list">
+                  {[
+                    "Scikit-learn",
+                    "Model Training & Evaluation",
+                    "Feature Engineering",
+                    "Supervised & Unsupervised Learning",
+                  ].map((skill) => (
+                    <span key={skill} className="skill-item">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-card">
+                <img src={vis} alt="frontend" className="skill-img" />
+                <h3 className="skill-title">Data Analysis & Visualization</h3>
+                <div className="skill-list">
+                  {[
+                    "Pandas",
+                    "NumPy",
+                    "Java",
+                    "Matplotlib",
+                    "Seaborn",
+                    "Jupyter Notebooks"
+                  ].map((skill) => (
+                    <span key={skill} className="skill-item">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-card">
+                <img src={front} alt="frontend" className="skill-img" />
+                <h3 className="skill-title">Cloud & DevOps</h3>
+                <div className="skill-list">
+                  {[
+                    "AWS (S3, Lambda basics)",
+                    "Docker",
+                    "CI/CD pipelines"
                   ].map((skill) => (
                     <span key={skill} className="skill-item">
                       {skill}
@@ -124,21 +177,13 @@ export const Home = () => {
               {/* Backend */}
               <div className="skill-card">
                 <img src={back} alt="backend"className="skill-img" />
-                <h3 className="skill-title">Backend</h3>
+                <h3 className="skill-title">Databases</h3>
                 <div className="skill-list">
                   {[
-                    "Node.js",
-                    "Express.js",
-                    "Python",
-                    "Django",
-                    "Flask",
-                    "Java",
-                    "Spring Boot",
-                    "C#",
-                    ".NET Core",
-                    "MongoDB",
                     "PostgreSQL",
                     "MySQL",
+                    "MongoDB",
+                    "Firebase"
                   ].map((skill) => (
                     <span key={skill} className="skill-item">
                       {skill}
@@ -149,15 +194,12 @@ export const Home = () => {
               {/* Other Skills */}
               <div className="skill-card">
                 <img src={other} alt="other" className="skill-img" />
-                <h3 className="skill-title">Other Skills</h3>
+                <h3 className="skill-title">Web & App Development</h3>
                 <div className="skill-list">
                   {[
-                    "REST & GraphQL",
-                    "Git",
-                    "Docker",
-                    "CI/CD",
-                    "AWS",
-                    "Firebase",
+                    "HTML & CSS",
+                    "React",
+                    "Tailwind CSS",
                   ].map((skill) => (
                     <span key={skill} className="skill-item">
                       {skill}
@@ -183,7 +225,20 @@ export const Home = () => {
               <img  alt="george brown" src={gbc} />
               <div className="gbc-about">
                 <h3 className="education-title">
-                  George Brown College - GPA 3.77
+                  George Brown College 
+                </h3>
+                <p className="education-text">2025 - 2026</p>
+                <p className="education-link">
+                  Applied A.I Solutions Development
+                </p>
+              </div>
+            </div>
+            <br></br>
+            <div className="education-container">
+              <img  alt="george brown" src={gbc} />
+              <div className="gbc-about">
+                <h3 className="education-title">
+                  George Brown College - GPA 3.78
                 </h3>
                 <p className="education-text">2023 - 2025</p>
                 <p className="education-link">
@@ -192,6 +247,7 @@ export const Home = () => {
               </div>
             </div>
           </section>
+          
         </motion.section>
 
         <motion.section
@@ -224,7 +280,7 @@ export const Home = () => {
                         marketing tools
                       </p>
                       <a
-                        href="https://github.com/dorpanz/Craft_connect_project.git"
+                        href="https://craft-connect-ecom.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="project-link"
@@ -236,7 +292,7 @@ export const Home = () => {
                 </div>
                 <div className="proj-info">
                   <p>
-                    Technologies used: React, Node.js, MongoDB, Express, JWT
+                    Technologies used: Python, Tableu, React, Node.js, MongoDB, Express, JWT
                   </p>
                   <ul>
                     <li>
@@ -277,43 +333,34 @@ export const Home = () => {
                     {/* Front Side (Image & Name) */}
                     <div className="project-card-front">
                       <img
-                        src={calorie}
+                        src={star}
                         alt="Craft Connect"
                         className="project-image"
                       />
-                      <h3 className="project-name">Calorie Counter</h3>
+                      <h3 className="project-name">Star Classification</h3>
                     </div>
                     {/* Back Side (Description & Link) */}
                     <div className="project-card-back">
                       <p className="project-description">
-                        A React web app that helps users track their daily
-                        calorie intake and macronutrients. Includes a food
-                        database, goal setting, and progress tracking
+                      A data science project that predicts the type of a star (e.g., Red Dwarf, Supergiant, White Dwarf) based on physical features such as temperature, luminosity, radius, and spectral class.
                       </p>
-                      <a
-                        href="https://calcountish.netlify.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                      >
-                        View Project
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div className="proj-info">
-                  <p>Technologies used: React, HTML, CSS</p>
+                  <p>Technologies used: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Jupyter Notebook</p>
                   <ul>
                     <li>
-                      Designed and developed a calorie-tracking web app to help
-                      users monitor daily intake
+                    Built a machine learning model to classify star types using real astronomical datasets
                     </li>
                     <li>
-                      Implemented features like food search, meal tracking, and
-                      nutritional insights.
+                    Performed data cleaning, feature engineering, and exploratory data analysis
                     </li>
                     <li>
-                      Integrated React.js and API for real-time data management.
+                    Trained and compared multiple algorithms (Logistic Regression, KNN, Random Forest)
+                    </li>
+                    <li>
+                    Visualized relationships between stellar attributes and classification outcomes
                     </li>
                   </ul>
                 </div>
@@ -338,14 +385,17 @@ export const Home = () => {
                       <p className="project-description">
                         {project.description}
                       </p>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                      >
-                        View Project
-                      </a>
+                      {project.link && (
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project-link"
+  >
+    View Project
+  </a>
+)}
+
                     </div>
                   </div>
                 </div>

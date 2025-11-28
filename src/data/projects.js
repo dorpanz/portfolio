@@ -1,16 +1,17 @@
 import connect4 from "../pics/connect4.png"
-import healthy from "../pics/healthy.png"
+import mask from "../pics/maskon.png"
 import todo from "../pics/todo.png"
 import expense from "../pics/expense.png"
+import calorie from "../pics/calorie.png"
 const projects = [
 
     {
       id: 3,
-      name: "Healthy Food Catering",
+      name: "Calorie Counter",
       description:
-        "A food delivery and catering JavaScript service that offers healthy meal plans. Users can customize their meals, track nutrition, and schedule deliveries.",
-      link: "https://healthyfood.glitch.me/main.html",
-      image: healthy,
+        "A React web app that helps users track their daily calorie intake and macronutrients. Includes a food database, goal setting, and progress tracking",
+      link: "https://calcountish.netlify.app/",
+      image: calorie,
     },
     {
       id: 4,
@@ -30,11 +31,10 @@ const projects = [
     },
     {
       id: 6,
-      name: "To-Do List App",
+      name: "Face Detector Cartoon Mask",
       description:
-        "A simple JavaScript task management app to help users organize their daily activities. Supports task categorization, due dates, and notifications.",
-      link: "https://capricious-large-voyage.glitch.me",
-      image: todo,
+        "A computer vision project that detects faces in real time and overlays fun cartoon-style masks using OpenCV. Built with Python and image processing techniques",
+      image: mask,
     },
   ];
   

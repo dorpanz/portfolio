@@ -9,9 +9,8 @@ export const Resume = () => {
     <div>
         <Navbar/>
       <div className="resume-container resume-container-1">
-        <p className="title-section">Resume and Cover Letter Examples</p>
-        <embed src="/resume.pdf" type="application/pdf" width="100%" height="800px" />
-        <embed src="/cover.pdf" type="application/pdf" width="100%" height="800px" />
+        <p className="title-section">Resume</p>
+        <embed src="/resumef.pdf" type="application/pdf" width="100%" height="800px" />
       </div>
     </div>
   );
